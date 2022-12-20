@@ -3,7 +3,7 @@ body {
     height: 100vh;
     margin: 0rem;
     overflow: hidden;
-    background-color: black;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(37, 37, 39));
 }
 
 #image-track>.image {
@@ -12,6 +12,8 @@ body {
     object-fit: cover;
     object-position: center;
     transition: 0.7s object-position;
+    box-shadow: 0.2rem 0.1rem 0.3rem rgb(31, 30, 30);
+    border-radius: 0.2rem;
 }
 
 #image-track {
@@ -20,7 +22,22 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -20%);
     user-select: none;
     transition: 0.7s transform;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+h2 {
+    font-size: 10rem;
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
 }
